@@ -3,6 +3,9 @@ const locationButton = document.querySelector(".location-button");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const hourlyWeatherDiv = document.querySelector('.hourly-weather .weather-list');
 const API_KEY = "7ce3e3db79949b7b015b0adffc590394";
+// Add these variables at the top of your main.js file
+const recentList = document.querySelector(".recent-list");
+const MAX_RECENT_LOCATIONS = 5;
 
 //Main Dashboard
 const getWeatherAnimatedIcon = (weatherId, isDay) => {
